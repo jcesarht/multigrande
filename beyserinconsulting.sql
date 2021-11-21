@@ -1,0 +1,78 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 21-11-2021 a las 20:33:31
+-- Versión del servidor: 10.4.13-MariaDB
+-- Versión de PHP: 7.4.8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `beyserinconsulting`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `multiplicaciones`
+--
+
+CREATE TABLE `multiplicaciones` (
+  `id` int(11) NOT NULL,
+  `multiplicando` text NOT NULL,
+  `multiplicador` text NOT NULL,
+  `producto` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `multiplicaciones`
+--
+
+INSERT INTO `multiplicaciones` (`id`, `multiplicando`, `multiplicador`, `producto`) VALUES
+(40, '123123123123', '12313123123', '1516030174301787273129'),
+(41, '612376183618623', '12371982739182371', '7576307573615977971931108895133'),
+(42, '65465654', '6464654654', '423212844808253716'),
+(43, '654654654', '654654654', '428572716003859716'),
+(44, '765869987098098098', '7657687698987987987', '5864793179225194871108564315371548726'),
+(45, '765765765765765', '765765765765765', '586397208018828467656846035225'),
+(46, '1234567898765432', '123456789765432', '152415789529035074805670146624'),
+(47, '34567234567', '98768765', '3414163067647899755'),
+(48, '09876987609876', '98765456798765', '975505193085145251658603140'),
+(49, '2341251251235', '234124124', '548143398259298293140'),
+(50, '234343564447546', '352364567546745', '82574368743922312646455537770'),
+(51, '234343564447546.3434', '352364567546745.56756757', '82574368743922566654255451954');
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `multiplicaciones`
+--
+ALTER TABLE `multiplicaciones`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `multiplicaciones`
+--
+ALTER TABLE `multiplicaciones`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
